@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
@@ -15,7 +16,6 @@ public class ObjectMovement : MonoBehaviour
     void Update()
     {
         playerMovement();
-
 
     }
     private void playerMovement()
@@ -37,6 +37,15 @@ public class ObjectMovement : MonoBehaviour
         {
             gameObject.transform.position += new Vector3(0, 0, -speed) * Time.deltaTime;
         };
+        
        
+    }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.CompareTag("destruible"))
+        {
+            Destroy(coll.gameObject);
+        }
     }
 }
