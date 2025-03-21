@@ -47,7 +47,11 @@ public class ObjectMovement : MonoBehaviour
         //forma 1 de hacer colisiones: Utilizando tags
         if (coll.gameObject.CompareTag("destruible"))
         {
-            GetComponent<Renderer>().material.color = Color.red;
+            foreach (Transform hijo in transform)
+            {
+                GetComponent<Renderer>().material.color = Color.red;
+            }
+           
             Destroy(coll.gameObject);
         }
     }
@@ -66,7 +70,11 @@ public class ObjectMovement : MonoBehaviour
     {
         if (coll.gameObject.CompareTag("destruible"))
         {
-            GetComponent<Renderer>().material.color = Color.green;
+            foreach(Transform hijo in transform)
+            {
+                GetComponent<Renderer>().material.color = Color.green;
+            }
+           
             Destroy(coll.gameObject);
         }
     }
