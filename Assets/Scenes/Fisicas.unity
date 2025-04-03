@@ -209,7 +209,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4147856583316825793, guid: 59db9cfd6df412d4f857ed79a393263b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1854678349}
   m_SourcePrefab: {fileID: 100100000, guid: 59db9cfd6df412d4f857ed79a393263b, type: 3}
 --- !u!1001 &250437771
 PrefabInstance:
@@ -863,6 +866,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4147856583316825793, guid: 59db9cfd6df412d4f857ed79a393263b, type: 3}
   m_PrefabInstance: {fileID: 223434971}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1854678349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854678348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36db0bdc38c406446931de240e990faa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzaSalto: 200
 --- !u!1 &1867395992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cantidadClonaciones: 0
   distanciaSeparacion: 0
-  objetoAClonar: {fileID: 1854678348}
+  objetoAClonar: {fileID: 0}
 --- !u!4 &2090602856
 Transform:
   m_ObjectHideFlags: 0
